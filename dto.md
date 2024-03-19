@@ -350,8 +350,10 @@
             floor: number, // этаж, на котором находится магазин
             link: string, // относительная ссылка на страницу магазина
             stocks: [ // список типов акций, которые есть в магазине
-                stockType: string, // название типа акции
-                backgroundButton: string, // цвет кнопки в hex или rgb
+                {
+                    stockType: string, // название типа акции
+                    backgroundButton: string, // цвет кнопки в hex или rgb
+                }
             ]
         }
     ]
@@ -433,8 +435,10 @@
             floor: number, // этаж, на котором находится кафе
             link: string, // относительная ссылка на страницу кафе
             stocks: [ // список типов акций, которые есть в кафе
-                stockType: string, // название типа акции
-                backgroundButton: string, // цвет кнопки в hex или rgb
+                {
+                    stockType: string, // название типа акции
+                    backgroundButton: string, // цвет кнопки в hex или rgb
+                }
             ]
         }
     ]
@@ -484,6 +488,12 @@
             ]
         }
     ],
+    stocks: [ // список типов акций, которые есть в кафе
+        {
+            stockType: string, // название типа акции
+            backgroundButton: string, // цвет кнопки в hex или rgb
+        }
+    ]
 }
 ```
 
@@ -731,6 +741,10 @@
     description: string, // описание арендатора
     floor: number, // этаж, на котором находится арендатор
     link?: string, // относительная ссылка на страницу арендатора
+    stocks: [ // список типов акций, которые есть у арендатора
+        stockType: string, // название типа акции
+        backgroundButton: string, // цвет кнопки в hex или rgb
+    ]
 }
 ```
 
