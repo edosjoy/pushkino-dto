@@ -194,13 +194,35 @@
             ColorButtonText: string, // цвет в hex или rgb
         },
         {
-            template: 'one full picture' // кастомный баннер на макете (таких баннеров может быть неограниченное кол-во в админке - на фронт отправляем все что есть)
-            images: {
+            template: 'theatre third rim' // название шаблона баннера (такой баннер один)
+            images: { // все картинки для баннера
                 imageDesktop: string, // большая картинка
                 imageMobile: string, // маленькая картинка
                 alt: string, // альтернативный текст картинки
             }
+            heading: string, // заголовок баннера
+            description: string, // текст баннера
+            buttonText: string, // текст кнопки
             link: string, // ссылка баннера, относительная
+            backgroundColor: string, // цвет в hex или rgb
+            colorText: string, // цвет в hex или rgb
+            backgroundColorButton: string, // цвет в hex или rgb
+            ColorButtonText: string, // цвет в hex или rgb
+        },
+        {
+            template: 'one full picture' // кастомный баннер на макете (таких баннеров может быть неограниченное кол-во в админке - на фронт отправляем все что есть)
+            images: { // все картинки для баннера
+                imageDesktop: string, // большая картинка
+                imageMobile: string, // маленькая картинка
+                alt: string, // альтернативный текст картинки
+            }
+            heading: string, // заголовок баннера
+            buttonText: string, // текст кнопки
+            link: string, // ссылка баннера, относительная
+            backgroundColor: string, // цвет в hex или rgb
+            colorText: string, // цвет в hex или rgb
+            backgroundColorButton: string, // цвет в hex или rgb
+            ColorButtonText: string, // цвет в hex или rgb
         },
     ], 
 }
